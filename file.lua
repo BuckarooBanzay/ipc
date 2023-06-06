@@ -46,6 +46,8 @@ function FileIPC:flush()
     end
 end
 
+-- TODO: remove old tx files periodically
+
 function FileIPC:worker()
     if not self.run then
         return
